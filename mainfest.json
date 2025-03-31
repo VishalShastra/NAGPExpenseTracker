@@ -1,0 +1,29 @@
+{
+  "name": "ExpenseTracker",
+  "short_name": "Expenses",
+  "description": "Track your daily expenses and budget",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4caf50",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    [
+      {
+        "src": "/assets/images/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any, maskable"
+      },
+      {
+        "src": "/assets/images/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any, maskable"
+      }
+    ]
+    
+  ]
+}

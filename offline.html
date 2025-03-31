@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetTracker - Offline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        .offline-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .offline-icon {
+            font-size: 60px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="offline-container">
+            <div class="offline-icon">
+                <i class="fas fa-wifi-slash"></i>
+            </div>
+            <h2>You're Offline</h2>
+            <p class="mb-4">Don't worry, you can still view your already loaded expenses, but you'll need to reconnect to add new ones.</p>
+            <p>Your new expenses will sync automatically when you're back online.</p>
+            <button class="btn btn-primary mt-3" onclick="tryReconnect()">
+                <i class="fas fa-sync me-2"></i>Try Again
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function tryReconnect() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
